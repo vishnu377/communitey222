@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Kutchi Jain Samaj - Portal</title>
+    <link rel="stylesheet" href="css/aurora-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+
+    <div class="mobile-container">
+
+        <!-- Screen 1: Splash Screen -->
+        <div id="splash-screen" class="screen active">
+            <div class="splash-content"><img src="assets/images/homeimages/kvo jodo logo.png" alt="Logo" class="splash-logo"><h1 class="splash-title">Kutchi Jain Samaj</h1></div>
+        </div>
+
+        <!-- Screen 2: Login -->
+        <div id="login-screen" class="screen">
+            <header class="app-header standalone"><h3 class="page-title">Community Portal</h3></header>
+            <main class="content-area">
+                <form class="form-layout"><img src="assets/images/homeimages/kvo jodo logo.png" alt="Logo" class="logo"><h2 class="form-title">Welcome Back</h2><input type="tel" placeholder="Mobile Number"><input type="password" placeholder="Password"><button type="button" id="login-submit-btn" class="btn btn-primary">Login</button><p class="form-note">Demonstration: Click Login to proceed.</p></form>
+            </main>
+        </div>
+
+        <!-- Screen 3: The Main Application Shell -->
+        <div id="main-app-screen" class="screen">
+            <header class="app-header">
+                <div class="header-content"><i class="material-icons-sharp back-button">arrow_back_ios</i><h3 class="page-title">Social</h3></div>
+                <div class="header-icons"><i class="material-icons-sharp" id="cart-button">shopping_cart</i><span id="cart-count">0</span></div>
+            </header>
+            <main class="content-area">
+                <div id="page-container"></div>
+            </main>
+            <nav class="bottom-nav">
+                <div class="nav-item active" data-page="socialHome"><i class="material-icons-sharp">groups</i><span>Social</span></div>
+                <div class="nav-item" data-page="businessHome"><i class="material-icons-sharp">storefront</i><span>Business</span></div>
+                <div class="nav-item" data-page="profile"><i class="material-icons-sharp">person</i><span>Profile</span></div>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- The Brains of the App -->
+    <script src="js/app.js"></script>
+</body>
+</html>
+
