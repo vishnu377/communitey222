@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-        document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     // --- FINALIZED APP DATA STRUCTURE (v5 - All Features and Fixes) ---
     const samajData = {
@@ -28,7 +20,7 @@
                 { name: 'Birthday', icon: 'emoji_events', id: 'birthday', items: ['Male', 'Female', 'Kids'] },
                 { name: 'New opening', icon: 'store', id: 'new_opening' },
                 { name: 'Social', icon: 'people', id: 'social_page' },
-                { name: 'Education', icon: 'school', id: 'education' },
+                // NOTE: 'Education' was moved into the new 'Information' category below
                 { name: 'Cooking', icon: 'soup_kitchen', id: 'cooking' },
                 { name: 'Good Thought', icon: 'lightbulb', id: 'good_thought' },
                 { name: 'Dharmik', icon: 'brightness_7', id: 'dharmik' },
@@ -36,6 +28,21 @@
                 { name: 'Congratulations', icon: 'thumb_up', id: 'congratulations' },
                 { name: 'Thankyou', icon: 'volunteer_activism', id: 'thankyou' },
                 { name: 'Medical', icon: 'local_hospital', id: 'medical' },
+                // NEW CATEGORY ADDED HERE
+                {
+                    name: 'Information', icon: 'info', id: 'information', items: [
+                        { name: 'Health' },
+                        { name: 'Computer' },
+                        { name: 'Mobile' },
+                        { name: 'Agriculture' },
+                        { name: 'Education' },
+                        { name: 'Job' },
+                        { name: 'Property' },
+                        { name: 'Commercial' },
+                        { name: 'Buy Sell' },
+                        { name: 'Stock Market' }
+                    ]
+                },
                 { name: 'Panchang', icon: 'event', id: 'panchang' },
                 { name: 'Pratika', icon: 'book', id: 'pratika' },
                 { name: 'Newspaper', icon: 'newspaper', id: 'newspaper' },
@@ -51,7 +58,7 @@
             villageDetails: {
                 'Bhuj': {
                     history: "Bhuj, the historical capital of Kutch, is known for its resilience and rich cultural heritage...",
-                    images: ['assets/images/placeholder.png', 'assets/images/placeholder.png'] 
+                    images: ['assets/images/placeholder.png', 'assets/images/placeholder.png']
                 },
                 'Mandvi': { history: "Mandvi is a port city known for its 400-year-old shipbuilding industry...", images: ['assets/images/placeholder.png'] }
             },
@@ -89,7 +96,7 @@
         // FIX: Restored the entire business data object
         business: {
             sellers: [ { id: 1, name: 'Kutchi Handicrafts', sellerPhone: '9725463362' }, { id: 2, name: 'Samaj Foods', sellerPhone: '919876543211' } ],
-            categories: [ { id: 'all', name: 'All'}, { id: 1, name: 'Handicrafts' }, { id: 2, name: 'Foods & Spices' }, { id: 3, name: 'Apparel' }, { id: 4, name: 'Decor' } ],
+            categories: [ { id: 'all', name: 'All'}, { id: 1, name: 'Handicrafts' }, { id: 2, name: 'Foods & Spices' }, { id: 3, name: 'Apparel' }, { id: 4, 'name': 'Decor' } ],
             products: [
                 { id: 101, name: 'Handmade Shawl', price: 2500, image: 'assets/images/placeholder.png', categoryId: 1, sellerId: 1, desc: 'A beautiful shawl, hand-woven by local artisans with traditional Kutchi patterns.' },
                 { id: 102, name: 'Spicy Mango Pickle', price: 280, image: 'assets/images/placeholder.png', categoryId: 2, sellerId: 2, desc: 'Homemade, traditional mango pickle with a perfect blend of hand-ground spices.' },
