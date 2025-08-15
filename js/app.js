@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         // FIX: Restored the entire business data object
         business: {
-            sellers: [ { id: 1, name: 'Kutchi Handicrafts', sellerPhone: '9725463362' }, { id: 2, name: 'Samaj Foods', sellerPhone: '919876543211' } ],
+            sellers: [ { id: 1, name: 'Kutchi Handicrafts', sellerPhone: '1234567890' }, { id: 2, name: 'Samaj Foods', sellerPhone: '919876543211' } ],
             categories: [ { id: 'all', name: 'All'}, { id: 1, name: 'Handicrafts' }, { id: 2, name: 'Foods & Spices' }, { id: 3, name: 'Apparel' }, { id: 4, 'name': 'Decor' } ],
             products: [
                 { id: 101, name: 'Handmade Shawl', price: 2500, image: 'assets/images/placeholder.png', categoryId: 1, sellerId: 1, desc: 'A beautiful shawl, hand-woven by local artisans with traditional Kutchi patterns.' },
